@@ -952,7 +952,7 @@
         window.addEventListener('resize', fitScene);
         fitScene(); // 즉시 적용
       
-        window.addEventListener('load', () => {
+        window.addEventListener('DOMContentLoaded', () => {
           fitScene();
           setTimeout(() => {
             typeNext();

@@ -603,7 +603,7 @@
     scaleCanvas();
     window.addEventListener('resize', scheduleScaleCanvas);
     window.addEventListener('orientationchange', scheduleScaleCanvas);
-    window.addEventListener('pageshow', scheduleScaleCanvas);
+    window.addEventListener('DOMContentLoaded', scheduleScaleCanvas);
     document.addEventListener('visibilitychange', () => {
       if (!document.hidden) scheduleScaleCanvas();
     });
