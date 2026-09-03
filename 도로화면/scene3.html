@@ -43,7 +43,6 @@
             position: relative;
             width: 1080px;
             height: 1920px;
-            visibility: hidden;
             /* 기존 배경의 하늘색 그라데이션 복원 */
             background: linear-gradient(to bottom, #63C8FF 0%, #C5EBFF 34%); 
             overflow: hidden;
@@ -773,10 +772,6 @@
 
         window.addEventListener('resize', resizeCanvas);
         resizeCanvas();
-
-        waitForBackground('asset/background-road.png').then(() => {
-            document.querySelector('.screen-container').style.visibility = 'visible';
-        });
 
         const btnStart = document.getElementById('btnStart');
         const btnName = document.getElementById('btnName');
